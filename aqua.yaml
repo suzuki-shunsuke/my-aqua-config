@@ -152,7 +152,7 @@ inline_repository:
   type: github_release
   repo_owner: open-policy-agent
   repo_name: conftest
-  artifact: 'conftest_{{trimPrefix "v" .Package.Version}}_{{.OS}}_x86_64.tar.gz' # TODO fix arch
+  artifact: 'conftest_{{trimPrefix "v" .Package.Version}}_{{if eq .OS "darwin"}}Darwin{{else}}{{.OS}}{{end}}_x86_64.tar.gz' # TODO fix arch
   files:
   - name: conftest
 - name: ci-info
@@ -180,7 +180,7 @@ inline_repository:
   type: github_release
   repo_owner: hairyhenderson
   repo_name: gomplate
-  artifact: "gomplate_{{.OS}}-{{.Arch}}-slim"
+  artifact: "gomplate_{{.OS}}-{{.Arch}}"
   files:
   - name: gomplate
 - name: tfsec
@@ -201,6 +201,7 @@ inline_repository:
   type: github_release
   repo_owner: mvdan
   repo_name: sh
+  archive_type: raw
   artifact: "shfmt_{{.Package.Version}}_{{.OS}}_{{.Arch}}"
   files:
   - name: shfmt
@@ -226,14 +227,14 @@ inline_repository:
   artifact: 'gh_{{trimPrefix "v" .Package.Version}}_{{if eq .OS "darwin"}}macOS{{else}}linux{{end}}_{{.Arch}}.tar.gz'
   files:
   - name: gh
-    src: 'gh_{{trimPrefix "v" .Version}}_{{if eq .OS "darwin"}}macOS{{else}}linux{{end}}_{{.Arch}}/bin/gh'
+    src: 'gh_{{trimPrefix "v" .Package.Version}}_{{if eq .OS "darwin"}}macOS{{else}}linux{{end}}_{{.Arch}}/bin/gh'
 - name: yq
   type: github_release
   repo_owner: mikefarah
   repo_name: yq
   artifact: "yq_{{.OS}}_{{.Arch}}"
   files:
-  - name: gh
+  - name: yq
 - name: tfmigrate
   type: github_release
   repo_owner: minamijoyo

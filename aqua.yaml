@@ -1,0 +1,111 @@
+packages:
+- name: akoi
+  repository: inline
+  version: v2.2.1
+- name: golangci-lint
+  repository: inline
+  version: v1.42.0
+- name: jq
+  repository: inline
+  version: jq-1.6
+- name: opa
+  repository: inline
+  version: v0.30.1
+- name: ytt
+  repository: inline
+  version: v0.34.0
+- name: circleci-config-merge
+  repository: inline
+  version: v1.0.0
+- name: cmdx
+  repository: inline
+  version: v1.6.0
+- name: git-rm-branch
+  repository: inline
+  version: 1.0.5
+- name: github-comment
+  repository: inline
+  version: v3.1.0
+- name: tfmigrator
+  repository: inline
+  version: v0.2.0
+
+inline_repository:
+- name: akoi
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: akoi
+  artifact: 'akoi_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: akoi
+- name: golangci-lint
+  type: github_release
+  repo_owner: golangci
+  repo_name: golangci-lint
+  artifact: 'golangci-lint-{{trimPrefix "v" .Package.Version}}-{{.OS}}-{{.Arch}}.tar.gz'
+  files:
+  - name: golangci-lint
+    src: 'golangci-lint-{{trimPrefix "v" .Package.Version}}-{{.OS}}-{{.Arch}}/golangci-lint'
+- name: jq
+  type: github_release
+  repo_owner: stedolan
+  repo_name: jq
+  artifact: 'jq-{{if eq .OS "darwin"}}osx{{else}}{{.OS}}{{end}}-{{.Arch}}'
+  files:
+  - name: jq
+- name: opa
+  type: github_release
+  repo_owner: open-policy-agent
+  repo_name: opa
+  artifact: "opa_{{.OS}}_{{.Arch}}"
+  files:
+  - name: opa
+- name: ytt
+  type: github_release
+  repo_owner: vmware-tanzu
+  repo_name: carvel-ytt
+  artifact: "ytt-{{.OS}}-{{.Arch}}"
+  files:
+  - name: ytt
+- name: circleci-config-merge
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: circleci-config-merge
+  artifact: 'circleci-config-merge_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: circleci-config-merge
+- name: cmdx
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: cmdx
+  artifact: 'cmdx_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: cmdx
+- name: kustomize
+  type: github_release
+  repo_owner: kubernetes-sigs
+  repo_name: kustomize
+  artifact: 'kustomize_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}'
+  files:
+  - name: kustomize
+- name: git-rm-branch
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: git-rm-branch
+  artifact: 'git-rm-branch_{{.Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: git-rm-branch
+- name: github-comment
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: github-comment
+  artifact: 'github-comment_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: github-comment
+- name: tfmigrator
+  type: github_release
+  repo_owner: tfmigrator
+  repo_name: cli
+  artifact: tfmigrator_{{.OS}}_{{.Arch}}.tar.gz
+  files:
+  - name: tfmigrator

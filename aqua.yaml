@@ -1,34 +1,73 @@
 packages:
 - name: akoi
   repository: inline
-  version: v2.2.1
+  version: v2.2.1 # renovate: depName=suzuki-shunsuke/akoi
 - name: golangci-lint
   repository: inline
-  version: v1.42.0
+  version: v1.42.0 # renovate: depName=golangci/golangci-lint
 - name: jq
   repository: inline
   version: jq-1.6
 - name: opa
   repository: inline
-  version: v0.30.1
+  version: v0.31.0 # renovate: depName=open-policy-agent/opa
 - name: ytt
   repository: inline
-  version: v0.34.0
+  version: v0.34.0 # renovate: depName=vmware-tanzu/carvel-ytt
 - name: circleci-config-merge
   repository: inline
-  version: v1.0.0
+  version: v1.0.0 # renovate: depName=suzuki-shunsuke/circleci-config-merge
 - name: cmdx
   repository: inline
-  version: v1.6.0
+  version: v1.6.0 # renovate: depName=suzuki-shunsuke/cmdx
 - name: git-rm-branch
   repository: inline
-  version: 1.0.5
+  version: 1.0.5 # renovate: depName=suzuki-shunsuke/git-rm-branch
 - name: github-comment
   repository: inline
-  version: v3.1.0
+  version: v3.1.0 # renovate: depName=suzuki-shunsuke/github-comment
 - name: tfmigrator
   repository: inline
-  version: v0.2.0
+  version: v0.2.0 # renovate: depName=tfmigrator/cli
+- name: conftest
+  repository: inline
+  version: v0.27.0 # renovate: depName=open-policy-agent/conftest
+- name: ci-info
+  repository: inline
+  version: v2.0.1 # renovate: depName=suzuki-shunsuke/ci-info
+- name: matchfile
+  repository: inline
+  version: v1.0.0 # renovate: depName=suzuki-shunsuke/matchfile
+- name: tfcmt
+  repository: inline
+  version: v2.0.0-0 # renovate: depName=suzuki-shunsuke/tfcmt
+- name: gomplate
+  repository: inline
+  version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
+- name: tfsec
+  repository: inline
+  version: v0.39.21 # renovate: depName=aquasecurity/tfsec
+- name: tflint
+  repository: inline
+  version: v0.30.0 # renovate: depName=terraform-linters/tflint
+- name: shfmt
+  repository: inline
+  version: v3.3.1 # renovate: depName=mvdan/sh
+- name: shellcheck
+  repository: inline
+  version: v0.7.2 # renovate: depName=koalaman/shellcheck
+- name: ghcp
+  repository: inline
+  version: v1.13.0 # renovate: depName=int128/ghcp
+- name: gh
+  repository: inline
+  version: v1.14.0 # renovate: depName=cli/cli
+- name: yq
+  repository: inline
+  version: v4.9.3 # renovate: depName=mikefarah/yq
+- name: tfmigrate
+  repository: inline
+  version: v0.2.7 # renovate: depName=minamijoyo/tfmigrate
 
 inline_repository:
 - name: akoi
@@ -109,3 +148,96 @@ inline_repository:
   artifact: tfmigrator_{{.OS}}_{{.Arch}}.tar.gz
   files:
   - name: tfmigrator
+- name: conftest
+  type: github_release
+  repo_owner: open-policy-agent
+  repo_name: conftest
+  artifact: 'conftest_{{trimPrefix "v" .Package.Version}}_{{.OS}}_x86_64.tar.gz' # TODO fix arch
+  files:
+  - name: conftest
+- name: ci-info
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: ci-info
+  artifact: 'ci-info_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: ci-info
+- name: matchfile
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: matchfile
+  artifact: 'matchfile_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: matchfile
+- name: tfcmt
+  type: github_release
+  repo_owner: suzuki-shunsuke
+  repo_name: tfcmt
+  artifact: 'tfcmt_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: tfcmt
+- name: gomplate
+  type: github_release
+  repo_owner: hairyhenderson
+  repo_name: gomplate
+  artifact: "gomplate_{{.OS}}-{{.Arch}}-slim"
+  files:
+  - name: gomplate
+- name: tfsec
+  type: github_release
+  repo_owner: aquasecurity
+  repo_name: tfsec
+  artifact: "tfsec-{{.OS}}-{{.Arch}}"
+  files:
+  - name: tfsec
+- name: tflint
+  type: github_release
+  repo_owner: terraform-linters
+  repo_name: tflint
+  artifact: "tflint_{{.OS}}_{{.Arch}}.zip"
+  files:
+  - name: tflint
+- name: shfmt
+  type: github_release
+  repo_owner: mvdan
+  repo_name: sh
+  artifact: "shfmt_{{.Package.Version}}_{{.OS}}_{{.Arch}}"
+  files:
+  - name: shfmt
+- name: shellcheck
+  type: github_release
+  repo_owner: koalaman
+  repo_name: shellcheck
+  artifact: "shellcheck-{{.Package.Version}}.{{.OS}}.x86_64.tar.xz" # TODO fix arch
+  files:
+  - name: shellcheck
+    src: shellcheck-{{.Package.Version}}/shellcheck
+- name: ghcp
+  type: github_release
+  repo_owner: int128
+  repo_name: ghcp
+  artifact: "ghcp_{{.OS}}_{{.Arch}}.zip"
+  files:
+  - name: ghcp
+- name: gh
+  type: github_release
+  repo_owner: cli
+  repo_name: cli
+  artifact: 'gh_{{trimPrefix "v" .Package.Version}}_{{if eq .OS "darwin"}}macOS{{else}}linux{{end}}_{{.Arch}}.tar.gz'
+  files:
+  - name: gh
+    src: 'gh_{{trimPrefix "v" .Version}}_{{if eq .OS "darwin"}}macOS{{else}}linux{{end}}_{{.Arch}}/bin/gh'
+- name: yq
+  type: github_release
+  repo_owner: mikefarah
+  repo_name: yq
+  artifact: "yq_{{.OS}}_{{.Arch}}"
+  files:
+  - name: gh
+- name: tfmigrate
+  type: github_release
+  repo_owner: minamijoyo
+  repo_name: tfmigrate
+  artifact: 'tfmigrate_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: tfmigrate

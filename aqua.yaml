@@ -13,7 +13,7 @@ packages:
   version: v0.31.0 # renovate: depName=open-policy-agent/opa
 - name: ytt
   registry: inline
-  version: v0.34.0 # renovate: depName=vmware-tanzu/carvel-ytt
+  version: v0.36.0 # renovate: depName=vmware-tanzu/carvel-ytt
 - name: circleci-config-merge
   registry: inline
   version: v1.0.0 # renovate: depName=suzuki-shunsuke/circleci-config-merge

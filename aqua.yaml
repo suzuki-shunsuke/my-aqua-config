@@ -64,7 +64,7 @@ packages:
   version: v1.14.0 # renovate: depName=cli/cli
 - name: yq
   registry: inline
-  version: v4.9.3 # renovate: depName=mikefarah/yq
+  version: v4.12.1 # renovate: depName=mikefarah/yq
 - name: tfmigrate
   registry: inline
   version: v0.2.7 # renovate: depName=minamijoyo/tfmigrate

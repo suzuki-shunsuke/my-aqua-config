@@ -68,6 +68,9 @@ packages:
 - name: tfmigrate
   registry: inline
   version: v0.2.7 # renovate: depName=minamijoyo/tfmigrate
+- name: direnv
+  registry: inline
+  version: v2.28.0 # renovate: depName=direnv/direnv
 
 inline_registry:
 - name: akoi
@@ -242,3 +245,11 @@ inline_registry:
   asset: 'tfmigrate_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
   files:
   - name: tfmigrate
+- name: direnv
+  type: github_release
+  repo_owner: direnv
+  repo_name: direnv
+  asset: 'direnv.{{.OS}}-{{.Arch}}'
+  archive_type: raw
+  files:
+  - name: direnv

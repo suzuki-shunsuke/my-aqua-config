@@ -46,7 +46,7 @@ packages:
   version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
 - name: tfsec
   registry: inline
-  version: v0.39.21 # renovate: depName=aquasecurity/tfsec
+  version: v0.58.5 # renovate: depName=aquasecurity/tfsec
 - name: tflint
   registry: inline
   version: v0.30.0 # renovate: depName=terraform-linters/tflint

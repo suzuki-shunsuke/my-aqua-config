@@ -61,7 +61,7 @@ packages:
   version: v1.13.0 # renovate: depName=int128/ghcp
 - name: gh
   registry: inline
-  version: v1.14.0 # renovate: depName=cli/cli
+  version: v2.0.0 # renovate: depName=cli/cli
 - name: yq
   registry: inline
   version: v4.12.1 # renovate: depName=mikefarah/yq

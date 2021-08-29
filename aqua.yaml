@@ -88,7 +88,7 @@ packages:
   version: v1.4.3 # renovate: depName=homeport/dyff
 - name: lambroll
   registry: inline
-  version: v0.11.0 # renovate: depName=fujiwara/lambroll
+  version: v0.11.7 # renovate: depName=fujiwara/lambroll
 
 inline_registry:
 - name: akoi

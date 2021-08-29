@@ -79,7 +79,7 @@ packages:
   version: kustomize/v3.9.4 # TODO renovate
 - name: kube-linter
   registry: inline
-  version: 0.2.2 # renovate: depName=stackrox/kube-linter
+  version: 0.2.3 # renovate: depName=stackrox/kube-linter
 - name: yamlpatch
   registry: inline
   version: v0.1.1 # renovate: depName=int128/yamlpatch

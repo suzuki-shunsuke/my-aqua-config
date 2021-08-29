@@ -73,7 +73,7 @@ packages:
   version: v2.28.0 # renovate: depName=direnv/direnv
 - name: helmfile
   registry: inline
-  version: v0.136.0 # renovate: depName=roboll/helmfile
+  version: v0.140.0 # renovate: depName=roboll/helmfile
 - name: kustomize
   registry: inline
   version: kustomize/v3.9.4 # TODO renovate

@@ -113,7 +113,8 @@ inline_registry:
   type: github_release
   repo_owner: stedolan
   repo_name: jq
-  asset: 'jq-{{if eq .OS "darwin"}}osx{{else}}{{.OS}}{{end}}-{{.Arch}}'
+  asset: 'jq-{{if eq .OS "darwin"}}osx-amd64{{else}}{{if eq .OS "linux"}}linux64{{else}}win64.exe{{end}}{{end}}'
+  archive_type: raw
   files:
   - name: jq
 - name: opa

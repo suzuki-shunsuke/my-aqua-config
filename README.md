@@ -2,12 +2,6 @@
 
 [aqua](https://github.com/suzuki-shunsuke/aqua)'s personal configuration.
 
-## Demo
-
-![demo](https://user-images.githubusercontent.com/13323303/131241636-3b866e3d-58df-4bc0-98e0-d958e3e4a549.gif)
-
-_This demo was created by [terminalizer](https://github.com/faressoft/terminalizer)_
-
 ## How to use
 
 If you don't install aqua yet, please install aqua. [document](https://github.com/suzuki-shunsuke/aqua#install)

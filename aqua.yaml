@@ -92,6 +92,15 @@ packages:
 - name: fzf
   registry: inline
   version: 0.27.2 # renovate: depName=junegunn/fzf
+- name: gofumpt
+  registry: inline
+  version: v0.1.1 # renovate: depName=mvdan/gofumpt
+- name: kubeval
+  registry: inline
+  version: v0.16.1 # renovate: depName=instrumenta/kubeval
+- name: circleci-cli
+  registry: inline
+  version: v0.1.6915
 
 inline_registry:
 - name: akoi
@@ -327,3 +336,26 @@ inline_registry:
   asset: 'fzf-{{.Package.Version}}-{{.OS}}_{{.Arch}}.{{if eq .OS "darwin"}}zip{{else}}tar.gz{{end}}'
   files:
   - name: fzf
+- name: gofumpt
+  type: github_release
+  repo_owner: mvdan
+  repo_name: gofumpt
+  asset: 'gofumpt_{{.Package.Version}}_{{.OS}}_{{.Arch}}'
+  archive_type: raw
+  files:
+  - name: gofumpt
+- name: kubeval
+  type: github_release
+  repo_owner: instrumenta
+  repo_name: kubeval
+  asset: 'kubeval-{{.OS}}-{{.Arch}}.tar.gz'
+  files:
+  - name: kubeval
+- name: circleci-cli
+  type: github_release
+  repo_owner: CircleCI-Public
+  repo_name: circleci-cli
+  asset: 'circleci-cli_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: circleci
+    src: circleci-cli_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}/circleci

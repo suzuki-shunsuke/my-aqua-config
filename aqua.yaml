@@ -71,6 +71,24 @@ packages:
 - name: direnv
   registry: inline
   version: v2.28.0 # renovate: depName=direnv/direnv
+- name: helmfile
+  registry: inline
+  version: v0.136.0 # renovate: depName=roboll/helmfile
+- name: kustomize
+  registry: inline
+  version: kustomize/v3.9.4 # TODO renovate
+- name: kube-linter
+  registry: inline
+  version: 0.2.2 # renovate: depName=stackrox/kube-linter
+- name: yamlpatch
+  registry: inline
+  version: v0.1.1 # renovate: depName=int128/yamlpatch
+- name: dyff
+  registry: inline
+  version: v1.4.3 # renovate: depName=homeport/dyff
+- name: lambroll
+  registry: inline
+  version: v0.11.0 # renovate: depName=fujiwara/lambroll
 
 inline_registry:
 - name: akoi
@@ -254,3 +272,47 @@ inline_registry:
   archive_type: raw
   files:
   - name: direnv
+- name: helmfile
+  type: github_release
+  repo_owner: roboll
+  repo_name: helmfile
+  asset: 'helmfile_{{.OS}}_{{.Arch}}'
+  archive_type: raw
+  files:
+  - name: helmfile
+- name: kustomize
+  type: github_release
+  repo_owner: kubernetes-sigs
+  repo_name: kustomize
+  asset: 'kustomize_{{trimPrefix "kustomize/" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: kustomize
+- name: kube-linter
+  type: github_release
+  repo_owner: stackrox
+  repo_name: kube-linter
+  asset: 'kube-linter-{{.OS}}.tar.gz'
+  files:
+  - name: kube-linter
+- name: yamlpatch
+  type: github_release
+  repo_owner: int128
+  repo_name: yamlpatch
+  asset: 'yamlpatch_{{.Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: yamlpatch
+- name: dyff
+  type: github_release
+  repo_owner: homeport
+  repo_name: dyff
+  asset: 'dyff_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
+  files:
+  - name: dyff
+- name: lambroll
+  type: github_release
+  repo_owner: fujiwara
+  repo_name: lambroll
+  asset: 'lambroll_{{.Package.Version}}_{{.OS}}_{{.Arch}}.{{if eq .OS "darwin"}}zip{{else}}tar.gz{{end}}'
+  files:
+  - name: lambroll
+    src: lambroll_{{.Package.Version}}_{{.OS}}_{{.Arch}}/lambroll

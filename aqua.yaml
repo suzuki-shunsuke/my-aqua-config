@@ -155,7 +155,8 @@ inline_registry:
   type: github_release
   repo_owner: open-policy-agent
   repo_name: conftest
-  asset: 'conftest_{{trimPrefix "v" .Package.Version}}_{{if eq .OS "darwin"}}Darwin{{else}}{{.OS}}{{end}}_x86_64.tar.gz' # TODO fix arch
+  # https://github.com/open-policy-agent/conftest/blob/f68c92599fa8fd1c2e81527aee351064f5419df5/.goreleaser.yml#L21-L31
+  asset: 'conftest_{{trimPrefix "v" .Package.Version}}_{{title .OS}}_x86_64.tar.gz'
   files:
   - name: conftest
 - name: ci-info

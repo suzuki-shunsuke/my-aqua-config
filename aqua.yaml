@@ -89,6 +89,9 @@ packages:
 - name: lambroll
   registry: inline
   version: v0.11.7 # renovate: depName=fujiwara/lambroll
+- name: fzf
+  registry: inline
+  version: 0.27.2 # renovate: depName=junegunn/fzf
 
 inline_registry:
 - name: akoi
@@ -316,3 +319,10 @@ inline_registry:
   files:
   - name: lambroll
     src: lambroll_{{.Package.Version}}_{{.OS}}_{{.Arch}}/lambroll
+- name: fzf
+  type: github_release
+  repo_owner: junegunn
+  repo_name: fzf
+  asset: 'fzf-{{.Package.Version}}-{{.OS}}_{{.Arch}}.{{if eq .OS "darwin"}}zip{{else}}tar.gz{{end}}'
+  files:
+  - name: fzf

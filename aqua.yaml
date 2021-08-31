@@ -10,7 +10,7 @@ packages:
   version: jq-1.6
 - name: opa
   registry: inline
-  version: v0.31.0 # renovate: depName=open-policy-agent/opa
+  version: v0.32.0 # renovate: depName=open-policy-agent/opa
 - name: ytt
   registry: inline
   version: v0.36.0 # renovate: depName=vmware-tanzu/carvel-ytt

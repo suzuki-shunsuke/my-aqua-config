@@ -160,13 +160,6 @@ inline_registry:
   asset: 'cmdx_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}.tar.gz'
   files:
   - name: cmdx
-- name: kustomize
-  type: github_release
-  repo_owner: kubernetes-sigs
-  repo_name: kustomize
-  asset: 'kustomize_{{trimPrefix "v" .Package.Version}}_{{.OS}}_{{.Arch}}'
-  files:
-  - name: kustomize
 - name: git-rm-branch
   type: github_release
   repo_owner: suzuki-shunsuke

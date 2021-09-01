@@ -100,7 +100,7 @@ packages:
   version: v0.16.1 # renovate: depName=instrumenta/kubeval
 - name: circleci-cli
   registry: inline
-  version: v0.1.15900 # renovate: depName=CircleCI-Public/circleci-cli
+  version: v0.1.15932 # renovate: depName=CircleCI-Public/circleci-cli
 - name: ghq
   registry: inline
   version: v1.2.1 # renovate: depName=x-motemen/ghq

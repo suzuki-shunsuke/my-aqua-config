@@ -377,7 +377,7 @@ inline_registry:
   type: github_release
   repo_owner: peco
   repo_name: peco
-  asset: 'peco_{{.OS}}_{{.Arch}}.zip'
+  asset: 'peco_{{.OS}}_{{.Arch}}.{{if eq .OS "darwin"}}zip{{else}}tar.gz{{end}}'
   files:
   - name: peco
     src: 'peco_{{.OS}}_{{.Arch}}/peco'

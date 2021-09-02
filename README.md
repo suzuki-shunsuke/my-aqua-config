@@ -14,12 +14,6 @@ $ cd global
 $ aqua i --only-link
 ```
 
-Add `~/.aqua/global/.aqua/bin` to the environment variable `PATH` in .bashrc or something.
-
-```sh
-export PATH=$HOME/.aqua/global/.aqua/bin:$PATH
-```
-
 ## License
 
 [MIT](LICENSE)

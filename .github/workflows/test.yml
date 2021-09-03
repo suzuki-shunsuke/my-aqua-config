@@ -13,7 +13,7 @@ jobs:
 
       - uses: suzuki-shunsuke/aqua-installer@main
         with:
-          version: v0.3.2-1
+          version: v0.4.0-2
       - run: aqua i --test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

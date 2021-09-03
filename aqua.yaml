@@ -74,7 +74,7 @@ packages:
   version: v4.12.1 # renovate: depName=mikefarah/yq
 - name: tfmigrate
   registry: official
-  version: v0.2.7 # renovate: depName=minamijoyo/tfmigrate
+  version: v0.2.8 # renovate: depName=minamijoyo/tfmigrate
 - name: direnv
   registry: official
   version: v2.28.0 # renovate: depName=direnv/direnv

@@ -54,9 +54,9 @@ packages:
 - name: gofumpt
   registry: standard
   version: v0.1.1 # renovate: depName=mvdan/gofumpt
-- name: go
-  registry: standard
-  version: "1.17" # TODO renovate
+# - name: go
+#   registry: standard
+#   version: "1.17" # TODO renovate
 - name: golangci-lint
   registry: standard
   version: v1.42.0 # renovate: depName=golangci/golangci-lint
@@ -118,9 +118,9 @@ packages:
   registry: standard
   version: v3.3.1 # renovate: depName=mvdan/sh
 
-- name: terraform
-  registry: standard
-  version: v1.0.6 # renovate: depName=hashicorp/terraform
+# - name: terraform
+#   registry: standard
+#   version: v1.0.6 # renovate: depName=hashicorp/terraform
 - name: suzuki-shunsuke/tfcmt
   registry: standard
   version: v2.0.0-0 # renovate: depName=suzuki-shunsuke/tfcmt

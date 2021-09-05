@@ -2,15 +2,6 @@
   automerge: true,
   extends: [
     "config:base",
-  ],
-  regexManagers: [
-    {
-      fileMatch: ["aqua.yaml"],
-      matchStrings: [
-        "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n",
-        "ref: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n",
-      ],
-      datasourceTemplate: "github-releases",
-    },
+    "github>suzuki-shunsuke/aqua-renovate-config"
   ],
 }

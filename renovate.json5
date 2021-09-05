@@ -8,6 +8,7 @@
       fileMatch: ["aqua.yaml"],
       matchStrings: [
         "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n",
+        "ref: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n",
       ],
       datasourceTemplate: "github-releases",
     },

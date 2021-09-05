@@ -4,4 +4,13 @@
     "config:base",
     "github>suzuki-shunsuke/aqua-renovate-config"
   ],
+  regexManagers: [
+    {
+      fileMatch: [".github/workflows/test.yaml"],
+      matchStrings: [
+        "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*)",
+      ],
+      datasourceTemplate: "github-releases",
+    },
+  ],
 }

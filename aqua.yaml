@@ -1,6 +1,6 @@
 registries:
 - type: standard
-  ref: v0.2.6 # renovate: depName=suzuki-shunsuke/aqua-registry
+  ref: v0.3.0 # renovate: depName=suzuki-shunsuke/aqua-registry
 packages:
 - name: suzuki-shunsuke/akoi
   registry: standard
@@ -127,7 +127,7 @@ packages:
 - name: tflint
   registry: standard
   version: v0.31.0 # renovate: depName=terraform-linters/tflint
-- name: tfmigrate
+- name: minamijoyo/tfmigrate
   registry: standard
   version: v0.2.9 # renovate: depName=minamijoyo/tfmigrate
 - name: tfmigrator/cli

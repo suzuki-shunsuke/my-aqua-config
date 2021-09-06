@@ -14,6 +14,6 @@ jobs:
       - uses: suzuki-shunsuke/aqua-installer@main
         with:
           version: v0.5.2 # renovate: depName=suzuki-shunsuke/aqua
-      - run: aqua i --test
+      - run: aqua i --only-link
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

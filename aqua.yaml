@@ -60,7 +60,7 @@ packages:
   version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
 - name: goreleaser
   registry: standard
-  version: v0.177.0 # renovate: depName=goreleaser/goreleaser
+  version: v0.178.0 # renovate: depName=goreleaser/goreleaser
 
 - name: minamijoyo/hcledit
   registry: standard

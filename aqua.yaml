@@ -28,7 +28,7 @@ packages:
   version: v2.28.0 # renovate: depName=direnv/direnv
 - name: homeport/dyff
   registry: standard
-  version: v1.4.3 # renovate: depName=homeport/dyff
+  version: v1.4.4 # renovate: depName=homeport/dyff
 
 - name: fzf
   registry: standard

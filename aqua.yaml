@@ -126,7 +126,7 @@ packages:
   version: v2.0.0-0 # renovate: depName=suzuki-shunsuke/tfcmt
 - name: tflint
   registry: standard
-  version: v0.31.0 # renovate: depName=terraform-linters/tflint
+  version: v0.32.0 # renovate: depName=terraform-linters/tflint
 - name: minamijoyo/tfmigrate
   registry: standard
   version: v0.2.9 # renovate: depName=minamijoyo/tfmigrate

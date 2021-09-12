@@ -158,7 +158,7 @@ packages:
 # init: t
 - name: terraform-linters/tflint
   registry: standard
-  version: v0.32.0 # renovate: depName=terraform-linters/tflint
+  version: v0.32.1 # renovate: depName=terraform-linters/tflint
 - name: tfmigrator/cli
   registry: standard
   version: v0.2.0 # renovate: depName=tfmigrator/cli

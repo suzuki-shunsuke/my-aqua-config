@@ -36,7 +36,7 @@ packages:
   version: v1.42.1 # renovate: depName=golangci/golangci-lint
 - name: goreleaser/goreleaser
   registry: standard
-  version: v0.178.0 # renovate: depName=goreleaser/goreleaser
+  version: v0.179.0 # renovate: depName=goreleaser/goreleaser
 
 # init: h
 - name: homeport/dyff

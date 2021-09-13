@@ -6,7 +6,7 @@ packages:
 # init: a
 - name: aquasecurity/tfsec
   registry: standard
-  version: v0.58.6 # renovate: depName=aquasecurity/tfsec
+  version: v0.58.8 # renovate: depName=aquasecurity/tfsec
 
 # init: b
 

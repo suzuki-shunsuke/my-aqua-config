@@ -118,7 +118,7 @@ packages:
 # init: r
 - name: roboll/helmfile
   registry: standard
-  version: v0.140.0 # renovate: depName=roboll/helmfile
+  version: v0.140.1 # renovate: depName=roboll/helmfile
 
 # init: s
 - name: stackrox/kube-linter

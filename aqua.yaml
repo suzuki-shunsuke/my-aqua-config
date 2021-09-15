@@ -47,7 +47,7 @@ packages:
   version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
 - name: helm/helm
   registry: standard
-  version: v3.6.3 # renovate: depName=helm/helm
+  version: v3.7.0 # renovate: depName=helm/helm
 
 # init: i
 - name: int128/ghcp

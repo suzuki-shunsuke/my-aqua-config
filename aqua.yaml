@@ -1,12 +1,24 @@
 registries:
 - type: standard
-  ref: v0.8.1 # renovate: depName=suzuki-shunsuke/aqua-registry
+  ref: v0.8.2 # renovate: depName=suzuki-shunsuke/aqua-registry
 
 packages:
 # init: a
+- name: ahmetb/kubectl-tree
+  registry: standard
+  version: v0.4.1 # renovate: depName=ahmetb/kubectl-tree
+- name: ahmetb/kubectx
+  registry: standard
+  version: v0.9.4 # renovate: depName=ahmetb/kubectx
+- name: ahmetb/kubens
+  registry: standard
+  version: v0.9.4 # renovate: depName=ahmetb/kubens
 - name: aquasecurity/tfsec
   registry: standard
   version: v0.58.9 # renovate: depName=aquasecurity/tfsec
+- name: argoproj/argo-rollouts
+  registry: standard
+  version: v1.0.6 # renovate: depName=argoproj/argo-rollouts
 
 # init: b
 
@@ -31,6 +43,9 @@ packages:
   version: v0.11.8 # renovate: depName=fujiwara/lambroll
 
 # init: g
+- name: GoogleCloudPlatform/terraformer
+  registry: standard
+  version: 0.8.16 # renovate: depName=GoogleCloudPlatform/terraformer
 - name: golangci/golangci-lint
   registry: standard
   version: v1.42.1 # renovate: depName=golangci/golangci-lint
@@ -39,23 +54,20 @@ packages:
   version: v0.179.0 # renovate: depName=goreleaser/goreleaser
 
 # init: h
-- name: homeport/dyff
-  registry: standard
-  version: v1.4.4 # renovate: depName=homeport/dyff
 - name: hairyhenderson/gomplate
   registry: standard
   version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
 - name: helm/helm
   registry: standard
   version: v3.7.0 # renovate: depName=helm/helm
+- name: homeport/dyff
+  registry: standard
+  version: v1.4.4 # renovate: depName=homeport/dyff
 
 # init: i
 - name: int128/ghcp
   registry: standard
   version: v1.13.0 # renovate: depName=int128/ghcp
-- name: instrumenta/kubeval
-  registry: standard
-  version: v0.16.1 # renovate: depName=instrumenta/kubeval
 
 # init: j
 - name: junegunn/fzf
@@ -66,20 +78,26 @@ packages:
 - name: koalaman/shellcheck
   registry: standard
   version: v0.7.2 # renovate: depName=koalaman/shellcheck
-- name: kubernetes-sigs/kind
-  registry: standard
-  version: v0.11.1 # renovate: depName=kubernetes-sigs/kind
 - name: kubernetes/kubectl
   registry: standard
   version: v1.22.0
-- name: kubernetes-sigs/kustomize
-  registry: standard
-  version: kustomize/v3.9.4 # TODO renovate
 - name: kubernetes/minikube
   registry: standard
   version: v1.23.0 # renovate: depName=kubernetes/minikube
+- name: kubernetes-sigs/kind
+  registry: standard
+  version: v0.11.1 # renovate: depName=kubernetes-sigs/kind
+- name: kubernetes-sigs/krew
+  registry: standard
+  version: v0.4.1 # renovate: depName=kubernetes-sigs/krew
+- name: kubernetes-sigs/kustomize
+  registry: standard
+  version: kustomize/v3.9.4 # TODO renovate
 
 # init: l
+- name: lima-vm/lima
+  registry: standard
+  version: v0.6.4 # renovate: depName=lima-vm/lima
 
 # init: m
 - name: mikefarah/yq

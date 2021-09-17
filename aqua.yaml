@@ -45,7 +45,7 @@ packages:
 # init: g
 - name: GoogleCloudPlatform/terraformer
   registry: standard
-  version: 0.8.16 # renovate: depName=GoogleCloudPlatform/terraformer
+  version: 0.8.17 # renovate: depName=GoogleCloudPlatform/terraformer
 - name: golangci/golangci-lint
   registry: standard
   version: v1.42.1 # renovate: depName=golangci/golangci-lint

@@ -43,6 +43,12 @@ packages:
   version: v0.11.8 # renovate: depName=fujiwara/lambroll
 
 # init: g
+- name: github/hub
+  registry: standard
+  version: v2.14.2 # renovate: depName=github/hub
+- name: gohugoio/hugo
+  registry: standard
+  version: v0.88.1 # renovate: depName=gohugoio/hugo
 - name: GoogleCloudPlatform/terraformer
   registry: standard
   version: 0.8.17 # renovate: depName=GoogleCloudPlatform/terraformer

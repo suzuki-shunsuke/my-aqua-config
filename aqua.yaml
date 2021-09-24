@@ -62,7 +62,7 @@ packages:
 # init: h
 - name: hairyhenderson/gomplate
   registry: standard
-  version: v3.9.0 # renovate: depName=hairyhenderson/gomplate
+  version: v3.10.0 # renovate: depName=hairyhenderson/gomplate
 - name: helm/helm
   registry: standard
   version: v3.7.0 # renovate: depName=helm/helm

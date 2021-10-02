@@ -4,188 +4,96 @@ registries:
 
 packages:
 # init: a
-- name: ahmetb/kubectl-tree
-  registry: standard
-  version: v0.4.1 # renovate: depName=ahmetb/kubectl-tree
-- name: ahmetb/kubectx
-  registry: standard
-  version: v0.9.4 # renovate: depName=ahmetb/kubectx
+- name: ahmetb/kubectl-tree@v0.4.1
+- name: ahmetb/kubectx@v0.9.4
 - name: ahmetb/kubens
-  registry: standard
   version: v0.9.4 # renovate: depName=ahmetb/kubens
-- name: aquasecurity/tfsec
-  registry: standard
-  version: v0.58.12 # renovate: depName=aquasecurity/tfsec
-- name: argoproj/argo-rollouts
-  registry: standard
-  version: v1.0.7 # renovate: depName=argoproj/argo-rollouts
+- name: aquasecurity/tfsec@v0.58.12
+- name: argoproj/argo-rollouts@v1.0.7
 
 # init: b
 
 # init: c
-- name: CircleCI-Public/circleci-cli
-  registry: standard
-  version: v0.1.15973 # renovate: depName=CircleCI-Public/circleci-cli
-- name: cli/cli
-  registry: standard
-  version: v2.0.0 # renovate: depName=cli/cli
+- name: CircleCI-Public/circleci-cli@v0.1.15973
+- name: cli/cli@v2.0.0
 
 # init: d
-- name: direnv/direnv
-  registry: standard
-  version: v2.28.0 # renovate: depName=direnv/direnv
+- name: direnv/direnv@v2.28.0
 
 # init: e
 
 # init: f
-- name: fujiwara/lambroll
-  registry: standard
-  version: v0.11.9 # renovate: depName=fujiwara/lambroll
+- name: fujiwara/lambroll@v0.11.9
 
 # init: g
-- name: github/hub
-  registry: standard
-  version: v2.14.2 # renovate: depName=github/hub
-- name: gohugoio/hugo
-  registry: standard
-  version: v0.88.1 # renovate: depName=gohugoio/hugo
-- name: GoogleCloudPlatform/terraformer
-  registry: standard
-  version: 0.8.17 # renovate: depName=GoogleCloudPlatform/terraformer
-- name: golangci/golangci-lint
-  registry: standard
-  version: v1.42.1 # renovate: depName=golangci/golangci-lint
-- name: goreleaser/goreleaser
-  registry: standard
-  version: v0.180.3 # renovate: depName=goreleaser/goreleaser
+- name: github/hub@v2.14.2
+- name: gohugoio/hugo@v0.88.1
+- name: GoogleCloudPlatform/terraformer@0.8.17
+- name: golangci/golangci-lint@v1.42.1
+- name: goreleaser/goreleaser@v0.180.3
 
 # init: h
-- name: hairyhenderson/gomplate
-  registry: standard
-  version: v3.10.0 # renovate: depName=hairyhenderson/gomplate
-- name: helm/helm
-  registry: standard
-  version: v3.7.0 # renovate: depName=helm/helm
-- name: homeport/dyff
-  registry: standard
-  version: v1.4.5 # renovate: depName=homeport/dyff
+- name: hairyhenderson/gomplate@v3.10.0
+- name: helm/helm@v3.7.0
+- name: homeport/dyff@v1.4.5
 
 # init: i
-- name: int128/ghcp
-  registry: standard
-  version: v1.13.0 # renovate: depName=int128/ghcp
+- name: int128/ghcp@v1.13.0
 
 # init: j
-- name: junegunn/fzf
-  registry: standard
-  version: 0.27.2 # renovate: depName=junegunn/fzf
+- name: junegunn/fzf@0.27.2
 
 # init: k
-- name: koalaman/shellcheck
-  registry: standard
-  version: v0.7.2 # renovate: depName=koalaman/shellcheck
+- name: koalaman/shellcheck@v0.7.2
 - name: kubernetes/kubectl
-  registry: standard
-  version: v1.22.0
-- name: kubernetes/minikube
-  registry: standard
-  version: v1.23.2 # renovate: depName=kubernetes/minikube
-- name: kubernetes-sigs/kind
-  registry: standard
-  version: v0.11.1 # renovate: depName=kubernetes-sigs/kind
-- name: kubernetes-sigs/krew
-  registry: standard
-  version: v0.4.1 # renovate: depName=kubernetes-sigs/krew
+  version: v1.22.0 # TODO renovate
+- name: kubernetes/minikube@v1.23.2
+- name: kubernetes-sigs/kind@v0.11.1
+- name: kubernetes-sigs/krew@v0.4.1
 - name: kubernetes-sigs/kustomize
-  registry: standard
   version: kustomize/v3.9.4 # TODO renovate
 
 # init: l
-- name: lima-vm/lima
-  registry: standard
-  version: v0.6.4 # renovate: depName=lima-vm/lima
+- name: lima-vm/lima@v0.6.4
 
 # init: m
-- name: mikefarah/yq
-  registry: standard
-  version: v4.13.3 # renovate: depName=mikefarah/yq
-- name: minamijoyo/hcledit
-  registry: standard
-  version: v0.2.0 # renovate: depName=minamijoyo/hcledit
-- name: minamijoyo/tfmigrate
-  registry: standard
-  version: v0.2.9 # renovate: depName=minamijoyo/tfmigrate
-- name: mvdan/gofumpt
-  registry: standard
-  version: v0.1.1 # renovate: depName=mvdan/gofumpt
-- name: mvdan/sh
-  registry: standard
-  version: v3.4.0 # renovate: depName=mvdan/sh
+- name: mikefarah/yq@v4.13.3
+- name: minamijoyo/hcledit@v0.2.0
+- name: minamijoyo/tfmigrate@v0.2.9
+- name: mvdan/gofumpt@v0.1.1
+- name: mvdan/sh@v3.4.0
 
 # init: n
 
 # init: o
-- name: open-policy-agent/conftest
-  registry: standard
-  version: v0.28.1 # renovate: depName=open-policy-agent/conftest
-- name: open-policy-agent/opa
-  registry: standard
-  version: v0.33.0 # renovate: depName=open-policy-agent/opa
+- name: open-policy-agent/conftest@v0.28.1
+- name: open-policy-agent/opa@v0.33.0
 
 # init: p
-- name: peco/peco
-  registry: standard
-  version: v0.5.10 # renovate: depName=peco/peco
+- name: peco/peco@v0.5.10
 
 # init: q
 
 # init: r
-- name: roboll/helmfile
-  registry: standard
-  version: v0.140.1 # renovate: depName=roboll/helmfile
+- name: roboll/helmfile@v0.140.1
 
 # init: s
-- name: stackrox/kube-linter
-  registry: standard
-  version: 0.2.4 # renovate: depName=stackrox/kube-linter
+- name: stackrox/kube-linter@0.2.4
 - name: stedolan/jq
-  registry: standard
-  version: jq-1.6
-- name: stern/stern
-  registry: standard
-  version: v1.20.1 # renovate: depName=stern/stern
-- name: suzuki-shunsuke/akoi
-  registry: standard
-  version: v2.2.1 # renovate: depName=suzuki-shunsuke/akoi
-- name: suzuki-shunsuke/ci-info
-  registry: standard
-  version: v2.0.1 # renovate: depName=suzuki-shunsuke/ci-info
-- name: suzuki-shunsuke/circleci-config-merge
-  registry: standard
-  version: v1.0.0 # renovate: depName=suzuki-shunsuke/circleci-config-merge
-- name: suzuki-shunsuke/cmdx
-  registry: standard
-  version: v1.6.0 # renovate: depName=suzuki-shunsuke/cmdx
-- name: suzuki-shunsuke/git-rm-branch
-  registry: standard
-  version: 1.0.5 # renovate: depName=suzuki-shunsuke/git-rm-branch
-- name: suzuki-shunsuke/github-comment
-  registry: standard
-  version: v3.1.0 # renovate: depName=suzuki-shunsuke/github-comment
-- name: suzuki-shunsuke/matchfile
-  registry: standard
-  version: v1.0.0 # renovate: depName=suzuki-shunsuke/matchfile
-- name: suzuki-shunsuke/tfcmt
-  registry: standard
-  version: v2.0.0-0 # renovate: depName=suzuki-shunsuke/tfcmt
+  version: jq-1.6 # TODO renovate
+- name: stern/stern@v1.20.1
+- name: suzuki-shunsuke/akoi@v2.2.1
+- name: suzuki-shunsuke/ci-info@v2.0.1
+- name: suzuki-shunsuke/circleci-config-merge@v1.0.0
+- name: suzuki-shunsuke/cmdx@v1.6.0
+- name: suzuki-shunsuke/git-rm-branch@1.0.5
+- name: suzuki-shunsuke/github-comment@v3.1.0
+- name: suzuki-shunsuke/matchfile@v1.0.0
+- name: suzuki-shunsuke/tfcmt@v2.0.0-0
 
 # init: t
-- name: terraform-linters/tflint
-  registry: standard
-  version: v0.32.1 # renovate: depName=terraform-linters/tflint
-- name: tfmigrator/cli
-  registry: standard
-  version: v0.2.0 # renovate: depName=tfmigrator/cli
+- name: terraform-linters/tflint@v0.32.1
+- name: tfmigrator/cli@v0.2.0
 
 # init: u
 
@@ -194,9 +102,7 @@ packages:
 # init: w
 
 # init: x
-- name: x-motemen/ghq
-  registry: standard
-  version: v1.2.1 # renovate: depName=x-motemen/ghq
+- name: x-motemen/ghq@v1.2.1
 
 # init: y
 

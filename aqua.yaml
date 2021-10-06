@@ -78,7 +78,7 @@ packages:
 - name: roboll/helmfile@v0.141.0
 
 # init: s
-- name: stackrox/kube-linter@0.2.4
+- name: stackrox/kube-linter@0.2.5
 - name: stedolan/jq
   version: jq-1.6 # TODO renovate
 - name: stern/stern@v1.20.1

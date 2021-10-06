@@ -8,7 +8,7 @@ packages:
 - name: ahmetb/kubectx@v0.9.4
 - name: ahmetb/kubens
   version: v0.9.4 # renovate: depName=ahmetb/kubens
-- name: aquasecurity/tfsec@v0.58.12
+- name: aquasecurity/tfsec@v0.58.14
 - name: argoproj/argo-rollouts@v1.0.7
 
 # init: b

@@ -57,7 +57,7 @@ packages:
 - name: lima-vm/lima@v0.7.1
 
 # init: m
-- name: mikefarah/yq@v4.13.3
+- name: mikefarah/yq@v4.13.4
 - name: minamijoyo/hcledit@v0.2.0
 - name: minamijoyo/tfmigrate@v0.2.9
 - name: mvdan/gofumpt@v0.1.1

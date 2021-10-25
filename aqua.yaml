@@ -16,7 +16,7 @@ packages:
 
 # init: c
 - name: CircleCI-Public/circleci-cli@v0.1.16122
-- name: cli/cli@v2.1.0
+- name: cli/cli@v2.2.0
 
 # init: d
 - name: direnv/direnv@v2.28.0

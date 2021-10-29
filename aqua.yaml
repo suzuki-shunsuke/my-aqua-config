@@ -10,7 +10,6 @@ packages:
   version: v0.9.4 # renovate: depName=ahmetb/kubens
 - name: aquasecurity/tfsec@v0.58.14
 - name: argoproj/argo-rollouts@v1.1.0
-- name: awslabs/ssosync@v1.0.0-rc.9
 
 # init: b
 

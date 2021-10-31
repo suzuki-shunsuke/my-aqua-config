@@ -93,7 +93,7 @@ packages:
 - name: suzuki-shunsuke/tfcmt@v2.0.2
 
 # init: t
-- name: terraform-linters/tflint@v0.33.0
+- name: terraform-linters/tflint@v0.33.1
 - name: tfmigrator/cli@v0.2.1
 
 # init: u

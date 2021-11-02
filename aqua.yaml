@@ -95,6 +95,7 @@ packages:
 # init: t
 - name: terraform-linters/tflint@v0.33.1
 - name: tfmigrator/cli@v0.2.1
+- name: tfutils/tfenv@v2.2.2
 
 # init: u
 

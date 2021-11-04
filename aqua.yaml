@@ -67,7 +67,7 @@ packages:
 # init: n
 
 # init: o
-- name: open-policy-agent/conftest@v0.28.2
+- name: open-policy-agent/conftest@v0.28.3
 - name: open-policy-agent/opa@v0.34.1
 
 # init: p

@@ -76,7 +76,7 @@ packages:
 # init: q
 
 # init: r
-- name: roboll/helmfile@v0.141.0
+- name: roboll/helmfile@v0.142.0
 
 # init: s
 - name: stackrox/kube-linter@0.2.5

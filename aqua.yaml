@@ -55,7 +55,7 @@ packages:
   version: kustomize/v3.9.4 # TODO renovate
 
 # init: l
-- name: lima-vm/lima@v0.7.2
+- name: lima-vm/lima@v0.7.3
 
 # init: m
 - name: mikefarah/yq@v4.14.1

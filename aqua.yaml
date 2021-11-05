@@ -23,7 +23,7 @@ packages:
 # init: e
 
 # init: f
-- name: fujiwara/lambroll@v0.11.9
+- name: fujiwara/lambroll@v0.12.0
 
 # init: g
 - name: github/hub@v2.14.2

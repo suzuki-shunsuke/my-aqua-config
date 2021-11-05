@@ -27,7 +27,7 @@ packages:
 
 # init: g
 - name: github/hub@v2.14.2
-- name: gohugoio/hugo@v0.89.0
+- name: gohugoio/hugo@v0.89.1
 - name: GoogleCloudPlatform/terraformer@0.8.17
 - name: golangci/golangci-lint@v1.43.0
 - name: goreleaser/goreleaser@v0.184.0

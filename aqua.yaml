@@ -45,7 +45,7 @@ packages:
 - name: junegunn/fzf@0.28.0
 
 # init: k
-- name: koalaman/shellcheck@v0.7.2
+- name: koalaman/shellcheck@v0.8.0
 - name: kubernetes/kubectl
   version: v1.22.0 # TODO renovate
 - name: kubernetes/minikube@v1.24.0

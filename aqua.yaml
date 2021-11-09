@@ -37,7 +37,7 @@ packages:
 # init: h
 - name: hairyhenderson/gomplate@v3.10.0
 - name: helm/helm@v3.7.1
-- name: homeport/dyff@v1.4.5
+- name: homeport/dyff@v1.4.6
 
 # init: i
 - name: int128/ghcp@v1.13.0

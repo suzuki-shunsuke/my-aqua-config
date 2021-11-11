@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-
       - uses: suzuki-shunsuke/aqua-installer@main
         with:
-          version: v0.7.13 # renovate: depName=suzuki-shunsuke/aqua
+          version: v0.7.14 # renovate: depName=suzuki-shunsuke/aqua
 
       - run: aqua i --test
         env:

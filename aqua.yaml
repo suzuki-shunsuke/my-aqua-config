@@ -14,7 +14,7 @@ packages:
 # init: b
 
 # init: c
-- name: CircleCI-Public/circleci-cli@v0.1.16225
+- name: CircleCI-Public/circleci-cli@v0.1.16277
 - name: cli/cli@v2.2.0
 
 # init: d

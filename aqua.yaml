@@ -60,7 +60,7 @@ packages:
 - name: lima-vm/lima@v0.7.4
 
 # init: m
-- name: mikefarah/yq@v4.14.2
+- name: mikefarah/yq@v4.15.1
 - name: minamijoyo/hcledit@v0.2.1
 - name: minamijoyo/tfmigrate@v0.2.11
 - name: mvdan/gofumpt@v0.2.0

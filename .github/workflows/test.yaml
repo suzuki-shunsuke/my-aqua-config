@@ -21,9 +21,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ hashFiles('registry.yaml') }}-
             ${{ runner.os }}-
-      - uses: suzuki-shunsuke/aqua-installer@main
+      - uses: aquaproj/aqua-installer@main
         with:
-          version: v0.8.0 # renovate: depName=suzuki-shunsuke/aqua
+          version: v0.8.0 # renovate: depName=aquaproj/aqua
 
       - run: aqua i --test
         env:

@@ -3,7 +3,7 @@
   platformAutomerge: true,
   extends: [
     "config:base",
-    "github>suzuki-shunsuke/aqua-renovate-config"
+    "github>aquaproj/aqua-renovate-config"
   ],
   regexManagers: [
     {

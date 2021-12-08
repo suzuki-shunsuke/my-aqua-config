@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-
       - uses: aquaproj/aqua-installer@main
         with:
-          version: v0.8.1 # renovate: depName=aquaproj/aqua
+          version: v0.8.2 # renovate: depName=aquaproj/aqua
 
       - run: aqua i --test
         env:

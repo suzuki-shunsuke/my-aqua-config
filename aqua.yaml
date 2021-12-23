@@ -25,7 +25,7 @@ packages:
 
 # init: f
 - name: flosell/iam-policy-json-to-terraform@1.8.0
-- name: fujiwara/lambroll@v0.12.6
+- name: fujiwara/lambroll@v0.12.7
 
 # init: g
 - name: github/hub@v2.14.2

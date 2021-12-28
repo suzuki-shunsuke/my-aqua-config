@@ -11,20 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: cache ~/.aqua
-        uses: actions/cache@v2
+      - uses: aquaproj/aqua-installer@v0.4.0
         with:
-          path: |
-            ~/.aqua/pkgs
-            ~/.aqua/registries
-          key: ${{ runner.os }}-${{ hashFiles('registry.yaml') }}-${{ hashFiles('aqua.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ hashFiles('registry.yaml') }}-
-            ${{ runner.os }}-
-      - uses: aquaproj/aqua-installer@main
-        with:
-          version: v0.8.7 # renovate: depName=aquaproj/aqua
-
-      - run: aqua i --test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          aqua_version: v0.8.7
+          aqua_opts: --test

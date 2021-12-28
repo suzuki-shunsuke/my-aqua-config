@@ -1,17 +1,7 @@
 {
-  automerge: true,
-  platformAutomerge: true,
   extends: [
     "config:base",
-    "github>aquaproj/aqua-renovate-config"
-  ],
-  regexManagers: [
-    {
-      fileMatch: [".github/workflows/test.yaml"],
-      matchStrings: [
-        "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*)",
-      ],
-      datasourceTemplate: "github-releases",
-    },
+    "github>suzuki-shunsuke/renovate-config",
+    "github>aquaproj/aqua-renovate-config#0.1.1",
   ],
 }

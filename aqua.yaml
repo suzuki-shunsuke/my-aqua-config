@@ -79,6 +79,7 @@ packages:
 # init: q
 
 # init: r
+- name: rhysd/actionlint@v1.6.8
 - name: roboll/helmfile@v0.142.0
 
 # init: s

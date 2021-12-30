@@ -67,6 +67,7 @@ packages:
 - name: mvdan/sh@v3.4.1
 
 # init: n
+- name: neovim/neovim@v0.6.0
 
 # init: o
 - name: open-policy-agent/conftest@v0.28.3

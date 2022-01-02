@@ -50,13 +50,11 @@ packages:
 
 # init: k
 - name: koalaman/shellcheck@v0.8.0
-- name: kubernetes/kubectl
-  version: v1.22.0 # TODO renovate
+- name: kubernetes/kubectl@v1.22.0
 - name: kubernetes/minikube@v1.24.0
 - name: kubernetes-sigs/kind@v0.11.1
 - name: kubernetes-sigs/krew@v0.4.2
-- name: kubernetes-sigs/kustomize
-  version: kustomize/v3.9.4 # TODO renovate
+- name: kubernetes-sigs/kustomize@kustomize/v3.9.4
 
 # init: l
 - name: lima-vm/lima@v0.8.0

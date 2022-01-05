@@ -20,7 +20,7 @@ packages:
 - name: cue-lang/cue@v0.4.0
 
 # init: d
-- name: direnv/direnv@v2.30.2
+- name: direnv/direnv@v2.30.3
 
 # init: e
 

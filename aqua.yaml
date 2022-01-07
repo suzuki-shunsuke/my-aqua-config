@@ -1,13 +1,12 @@
 registries:
 - type: standard
-  ref: v0.13.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v0.13.1 # renovate: depName=aquaproj/aqua-registry
 
 packages:
 # init: a
 - name: ahmetb/kubectl-tree@v0.4.1
 - name: ahmetb/kubectx@v0.9.4
-- name: ahmetb/kubens
-  version: v0.9.4 # renovate: depName=ahmetb/kubectx
+- name: ahmetb/kubectx/kubens@v0.9.4
 - name: aquasecurity/tfsec@v0.63.1
 - name: argoproj/argo-cd@v2.2.2
 - name: argoproj/argo-rollouts@v1.1.1
@@ -25,6 +24,7 @@ packages:
 # init: e
 
 # init: f
+- name: FairwindsOps/pluto@v5.2.4
 - name: flosell/iam-policy-json-to-terraform@1.8.0
 - name: fujiwara/lambroll@v0.12.7
 
@@ -43,6 +43,7 @@ packages:
 - name: homeport/dyff@v1.4.6
 
 # init: i
+- name: instrumenta/kubeval@v0.16.1
 - name: int128/ghcp@v1.13.0
 
 # init: j
@@ -81,6 +82,7 @@ packages:
 # init: r
 - name: rhysd/actionlint@v1.6.8
 - name: roboll/helmfile@v0.142.0
+- name: ryane/kfilt@v0.0.6
 
 # init: s
 - name: stackrox/kube-linter@0.2.5

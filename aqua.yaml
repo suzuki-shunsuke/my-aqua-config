@@ -71,7 +71,7 @@ packages:
 - name: neovim/neovim@v0.6.1
 
 # init: o
-- name: open-policy-agent/conftest@v0.29.0
+- name: open-policy-agent/conftest@v0.30.0
 - name: open-policy-agent/opa@v0.36.0
 
 # init: p

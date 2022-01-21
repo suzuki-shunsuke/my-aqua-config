@@ -116,4 +116,4 @@ packages:
 # init: y
 
 # init: z
-- name: weaveworks/eksctl@v0.79.0
+- name: weaveworks/eksctl@v0.80.0

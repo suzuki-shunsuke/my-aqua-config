@@ -60,7 +60,7 @@ packages:
 - name: kubernetes-sigs/kustomize@kustomize/v4.4.1
 
 # init: l
-- name: lima-vm/lima@v0.8.1
+- name: lima-vm/lima@v0.8.2
 
 # init: m
 - name: mikefarah/yq@v4.18.1

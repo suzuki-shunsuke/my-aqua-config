@@ -85,7 +85,7 @@ packages:
 # init: r
 - name: rhysd/actionlint@v1.6.8
 - name: roboll/helmfile@v0.143.0
-- name: ryane/kfilt@v0.0.6
+- name: ryane/kfilt@v0.0.7
 
 # init: s
 - name: stackrox/kube-linter@0.2.5

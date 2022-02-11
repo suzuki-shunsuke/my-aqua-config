@@ -75,7 +75,7 @@ packages:
 
 # init: o
 - name: open-policy-agent/conftest@v0.30.0
-- name: open-policy-agent/opa@v0.37.1
+- name: open-policy-agent/opa@v0.37.2
 
 # init: p
 - name: peco/peco@v0.5.10

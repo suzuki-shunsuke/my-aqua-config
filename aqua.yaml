@@ -41,7 +41,7 @@ packages:
 
 # init: h
 - name: hairyhenderson/gomplate@v3.10.0
-- name: hashicorp/terraform@v1.1.5
+- name: hashicorp/terraform@v1.1.6
 - name: helm/helm@v3.8.0
 - name: homeport/dyff@v1.5.1
 

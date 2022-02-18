@@ -27,7 +27,7 @@ packages:
 # init: f
 - name: FairwindsOps/pluto@v5.4.0
 - name: flosell/iam-policy-json-to-terraform@1.8.0
-- name: fujiwara/lambroll@v0.12.7
+- name: fujiwara/lambroll@v0.12.8
 
 # init: g
 # - name: github/hub@v2.14.2
